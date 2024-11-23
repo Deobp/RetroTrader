@@ -1,0 +1,28 @@
+/* Container styling */
+.controls-container {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background-color: #2d3748;
+  border-radius: 0.5rem;
+}
+
+/* Button base styling */
+.control-button {
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  background-color: #4a5568; 
+  color: #a0aec0;
+  transition: background-color 0.2s ease;
+}
+
+/* Button hover state */
+.control-button:hover {
+  background-color: #2d3748; 
+}
+
+/* Button active state */
+.control-button.active {
+  background-color: #3182ce; 
+  color: #ffffff;
+}

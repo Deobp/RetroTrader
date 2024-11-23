@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #121212; /* Black background */
+  color: #ffffff; /* White text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+/* Styling for Timeframe Controls */
+.controls-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0.75rem;
+  background: #1e1e1e; /* Slightly lighter black */
+  border-radius: 12px; /* Smooth rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+}
+
+.controls-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #e0e0e0; /* Light gray text */
+  background-color: #292929; /* Dark gray background */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.controls-button:hover {
+  background-color: #444; /* Slightly lighter on hover */
+  color: #ffffff; /* Pure white text */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Glow effect */
+}
+
+.controls-button.active {
+  background: linear-gradient(145deg, #3b82f6, #2563eb); /* Blue gradient */
+  color: #ffffff; /* White text */
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.6); /* Highlight shadow */
+}
+
+/* Styling for Chart */
+.chart-container {
+  padding: 1rem;
+  background: #1e1e1e; /* Same as controls container */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /* Adjust height */
+  width: 100%; /* Full width */
+}
+
+.chart {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .controls-container {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .controls-button {
+    font-size: 0.875rem; /* Smaller font for smaller screens */
+    padding: 0.4rem 0.8rem;
+  }
+
+  .chart-container {
+    height: 50vh; /* Reduce height on smaller screens */
+  }
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 200px); /* Adjust height dynamically */
+  width: 100%;
+  background: #1e1e1e; /* Match the theme */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.chart iframe {
+  width: 100%; /* Make it responsive */
+  max-width: 1200px; /* Limit maximum size */
+  height: 100%; /* Stretch to container */
+  border: none; /* Remove iframe borders */
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    height: 50vh; /* Reduce height on smaller screens */
+  }
+  .chart iframe {
+    max-width: 100%; /* Ensure it doesn't overflow */
+  }
+}
