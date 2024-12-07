@@ -1,0 +1,15 @@
+
+
+.timeframe-buttons button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.chart-wrapper .tv-logo {
+  display: none !important;
+}
+
+
+a#tv-attr-logo {
+  display: none !important;
+}
