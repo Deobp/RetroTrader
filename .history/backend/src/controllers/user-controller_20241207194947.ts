@@ -89,6 +89,7 @@ export const loginUser = async (req: Request, res: Response, next: NextFunction)
   }
 };
 
+//get current user
 export const getCurrentUser = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
     const userId = (req as any).user?.id;
@@ -108,6 +109,7 @@ export const getCurrentUser = async (req: Request, res: Response, next: NextFunc
   }
 };
 
+//upd user
 export const updateUser = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
     const userId = (req as any).user?.id;
@@ -136,6 +138,7 @@ export const updateUser = async (req: Request, res: Response, next: NextFunction
   }
 };
 
+//del user
 export const deleteUser = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
     const userId = (req as any).user?.id;

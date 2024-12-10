@@ -22,11 +22,10 @@ const bootstrap = async (): Promise<void> => {
     // middleware
     app.use(express.json());
     app.use(cookieParser());
-    // use environment variable for allowed origins
+
     app.use(cors({ origin: process.env.CLIENT_ORIGIN || 'http://localhost:5173', credentials: true }));
     app.use(helmet());
 
-    // check route
     app.get('/', (_req: Request, res: Response) => {
       res.status(200).send('API is running!');
     });
@@ -39,13 +38,11 @@ const bootstrap = async (): Promise<void> => {
     // global error handler
     app.use(errorHandler);
 
-    // start server
     app.listen(PORT, () => {
       console.log(`\x1b[34mServer running on port ${PORT}\x1b[0m`);
     });
   } catch (error) {
     console.error('\x1b[31mFailed to start server:\x1b[0m', error);
-    // exit the process if the server fails to start
     process.exit(1); 
   }
 };

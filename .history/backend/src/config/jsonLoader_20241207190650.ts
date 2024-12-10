@@ -4,6 +4,7 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import { connectDb } from "./db"; 
 
+//load environment variables
 dotenv.config({ path: './src/config/.env' });
 
 interface CandleData {
