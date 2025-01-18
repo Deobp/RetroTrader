@@ -1,4 +1,3 @@
-import { Config } from './../../../frontend/node_modules/eslint-plugin-react/lib/rules/jsx-no-literals.d';
 import { DataTypes, Model } from 'sequelize';
 import bcrypt from 'bcrypt';
 import { sequelize } from '../config/db';
