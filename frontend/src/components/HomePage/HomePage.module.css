@@ -1,0 +1,39 @@
+.container {
+  @apply flex flex-col items-center justify-center min-h-screen bg-gray-100;
+}
+
+.header {
+  @apply text-center mb-8;
+}
+
+.title {
+  @apply text-4xl font-bold text-gray-800;
+}
+
+.description {
+  @apply text-lg text-gray-600 mt-4;
+}
+
+.buttonGroup {
+  @apply flex space-x-4;
+}
+
+.button {
+  @apply px-6 py-3 font-semibold rounded-lg shadow transition duration-200;
+}
+
+.buttonPrimary {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.buttonSecondary {
+  @apply bg-gray-600 text-white hover:bg-gray-700;
+}
+
+.footer {
+  @apply absolute bottom-4 text-center;
+}
+
+.footerText {
+  @apply text-gray-500 text-sm;
+}

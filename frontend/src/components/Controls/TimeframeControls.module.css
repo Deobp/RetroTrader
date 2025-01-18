@@ -1,0 +1,28 @@
+
+.controls {
+  @apply flex flex-col gap-4 p-4 bg-gray-100;
+}
+
+.timeframes {
+  @apply flex gap-2 justify-center;
+}
+
+.timeframeButton {
+  @apply px-3 py-2 font-medium text-gray-700 border border-gray-300 rounded transition duration-200;
+}
+
+.timeframeButton:hover {
+  @apply bg-gray-200;
+}
+
+.active {
+  @apply bg-blue-500 text-white border-blue-500;
+}
+
+.actions {
+  @apply flex gap-4 justify-center;
+}
+
+.actionButton {
+  @apply px-4 py-2 font-medium text-white bg-blue-500 rounded hover:bg-blue-600 transition duration-200;
+}

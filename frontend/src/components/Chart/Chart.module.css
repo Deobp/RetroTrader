@@ -1,0 +1,35 @@
+/* .chart-wrapper .tv-logo {
+  display: none !important;
+} */
+
+.container {
+  @apply relative;
+}
+
+.navigation {
+  @apply flex justify-between items-center mb-4;
+}
+
+.navButton {
+  @apply px-4 py-2 font-medium text-white rounded transition duration-200;
+}
+
+.homeButton {
+  @apply bg-blue-500 hover:bg-blue-600;
+}
+
+.logoutButton {
+  @apply bg-red-500 hover:bg-red-600;
+}
+
+.loadingOverlay {
+  @apply absolute inset-0 flex items-center justify-center bg-gray-700 bg-opacity-50 text-white text-lg font-bold;
+}
+
+.errorOverlay {
+  @apply absolute inset-0 flex items-center justify-center bg-red-700 bg-opacity-50 text-white text-lg font-bold;
+}
+
+.chartWrapper {
+  @apply w-full h-full;
+}

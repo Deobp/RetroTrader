@@ -1,0 +1,48 @@
+# Node.js specific
+node_modules/
+dist/
+build/
+.npm/
+.cache/
+.env
+*.log
+logs/
+*.pid
+*.seed
+*.gz
+.DS_Store
+
+# TypeScript specific
+*.tsbuildinfo
+
+# Backend specific
+backend/node_modules/
+backend/dist/
+backend/.env
+backend/src/data/
+
+# Frontend specific
+frontend/node_modules/
+frontend/build/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/.parcel-cache/
+frontend/.next/
+
+# System files
+Thumbs.db
+.idea/
+.vscode/
+.history/  # If you use the VSCode History extension
+*.swp
+*.swo
+*.tmp
+
+# Git specific
+.git/
+.gitignore
+
+# Miscellaneous
+*.bak

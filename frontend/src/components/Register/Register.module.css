@@ -1,0 +1,43 @@
+.container {
+  @apply flex flex-col items-center justify-center min-h-screen bg-gray-100;
+}
+
+.navigation {
+  @apply flex space-x-4 mb-4;
+}
+
+.navButton {
+  @apply px-4 py-2 bg-blue-600 text-white font-medium rounded hover:bg-blue-700 transition duration-200;
+}
+
+.heading {
+  @apply text-3xl font-bold text-gray-800 mb-6;
+}
+
+.form {
+  @apply flex flex-col space-y-4 w-full max-w-sm bg-white p-6 shadow-md rounded;
+}
+
+.formGroup {
+  @apply flex flex-col space-y-2;
+}
+
+.label {
+  @apply text-sm font-medium text-gray-600;
+}
+
+.input {
+  @apply w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600;
+}
+
+.submitButton {
+  @apply px-4 py-2 bg-green-600 text-white font-medium rounded hover:bg-green-700 transition duration-200;
+}
+
+.errorMessage {
+  @apply text-red-600 text-sm mt-2;
+}
+
+.successMessage {
+  @apply text-green-600 text-sm mt-2;
+}

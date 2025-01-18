@@ -1,0 +1,23 @@
+.tradeStatsContainer {
+  @apply flex flex-col items-center p-4 bg-gray-100;
+}
+
+.errorMessage {
+  @apply text-red-500 font-medium mb-2;
+}
+
+.statsDisplay {
+  @apply text-center mb-4;
+}
+
+.lastTrade, .currentPosition {
+  @apply mt-2 text-blue-600 font-semibold;
+}
+
+.tradeActions {
+  @apply flex gap-4;
+}
+
+.actionButton {
+  @apply px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-200;
+}
